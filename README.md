@@ -20,7 +20,24 @@ Menüye tıklayınca günün vakitleri açılır, sıradaki vakit kalın yazıl�
 
 ## Kurulum
 
-macOS 13 veya üstü ve Swift 5.9 veya üstü (Xcode ya da Command Line Tools) gerekir.
+macOS 13 veya üstü gerekir. Apple Silicon ve Intel Mac'lerde çalışır.
+
+### Hazır sürümü indirme
+
+1. **[Ezan-Vakti-macOS.zip](https://github.com/elemirs/elemirs-ezan-vakti/releases/latest/download/Ezan-Vakti-macOS.zip)** dosyasını indirip açın.
+2. `Ezan Vakti.app` dosyasını **Uygulamalar** klasörüne taşıyın.
+3. Uygulamayı açmayı deneyin. Uygulama Apple tarafından onaylanmadığı için macOS ilk açılışı engeller.
+4. **Sistem Ayarları → Gizlilik ve Güvenlik** bölümüne gidip en altta **Yine de Aç**'a tıklayın.
+
+Terminal kullanmayı tercih ederseniz 3. ve 4. adımlar yerine şu komutu çalıştırıp uygulamayı açabilirsiniz:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/Ezan Vakti.app"
+```
+
+### Kaynak koddan derleme
+
+Swift 5.9 veya üstü (Xcode ya da Command Line Tools) gerekir.
 
 ```bash
 git clone https://github.com/elemirs/elemirs-ezan-vakti.git
